@@ -10,7 +10,21 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-core</module>
+        <module>java-se</module>
     </modules>
 
-
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.16.20</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.56</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
