@@ -12,6 +12,9 @@
         <module>spring-core</module>
         <module>java-se</module>
         <module>excel-test</module>
+        <module>mq-producer</module>
+        <module>mq-consumer-1</module>
+        <module>mq-consumer-2</module>
     </modules>
 
     <parent>
@@ -24,6 +27,11 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
+                <version>2.1.5.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-amqp</artifactId>
                 <version>2.1.5.RELEASE</version>
             </dependency>
             <dependency>
